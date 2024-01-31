@@ -1,0 +1,111 @@
+body {
+  background: #7F7FD5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  background: white;
+  margin: 0px auto;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 700px;
+  border: px solid rgba(225, 225, 226, 0.8);
+}
+.container .header {
+  display: flex;
+  border: 1px solid #ccc;
+  height: 120px;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.container .header .logo {
+  font-size: 29px;
+  font-style: italic;
+  padding-left: 30px;
+  flex-basis: 50%;
+  flex-grow: 1;
+  text-shadow: 0px 0px 3px #ccc;
+}
+.container .header .menu {
+  flex-basis: 40%;
+  flex-grow: 1;
+  height: 100%;
+}
+.container .header .menu ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.container .header .menu ul li a {
+  color: #222;
+  padding: 15px;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+.container .header .menu ul li a:hover {
+  color: #fff;
+  background-color: #ccc;
+}
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .content .aside {
+  flex-basis: 15%;
+}
+.container .content .proyects {
+  flex-basis: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.container .content .proyects .proyect {
+  flex-grow: 1;
+  width: 250px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(225, 225, 226, 0.8);
+}
+.container .content .proyects .proyect .image-wrap img {
+  width: 100%;
+}
+.container .content .proyects .proyect .proyect-info {
+  padding: 10px;
+}
+.container .content .proyects .proyect .proyect-info a {
+  font-size: 16px;
+  color: #222;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+.container .content .proyects .proyect .proyect-info a:hover {
+  color: rgb(53, 114, 53);
+}
+.container .content .proyects .proyect .proyect-info p {
+  font-size: 16px;
+  color: gray;
+}/*# sourceMappingURL=estilos.css.map */
