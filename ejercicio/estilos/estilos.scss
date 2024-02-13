@@ -19,53 +19,56 @@ body {
 
 .container{
     width: 90%;
-    background: white;
+    border: 1px solid rgba(225, 225, 226, 0.8);
     margin: 0px auto;
-    height: auto;
+    background: white;
     margin-top: 40px;
     margin-bottom: 40px;
-    
-    
+
     min-height: 700px;
-    border: px solid rgba(225, 225, 226, 0.8);
     .header{
         display: flex;
-        border: 1px solid #ccc;
-        height: 120px;
-        align-items: center;
-
         flex-flow: row wrap;
+        height: 120px;
+
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+
         .logo{
-            font-size: 29px;
-            font-style: italic;
-            padding-left: 30px;
-            flex-basis: 50%;
             flex-grow: 1;
-            text-shadow: 0px 0px 3px #ccc;
+            flex-basis: 60%;
+            padding-left: 30px;
+            h1{
+                font-size: 55px;
+                font-style: italic;
+                text-shadow: 0px 0px 5px #ccc;
+                text-transform: uppercase;
+
+            }
         }
         .menu{
-            flex-basis: 40%;
             flex-grow: 1;
-            height: 100%;
+            flex-basis: 30%;
+
+            padding-right: 30px;
             ul{
                 display: flex;
-                height: 100%;
-                align-items: center;
                 justify-content: space-between;
-                padding-right: 30px;
+                height: 100%;
                 li{
                     a{
                         color: #222;
                         padding: 15px;
+                        text-transform: uppercase;
                         transition: all 300ms;
                         -webkit-transition: all 300ms;
                         -moz-transition: all 300ms;
                         -ms-transition: all 300ms;
                         -o-transition: all 300ms;
-}
+                    }
                     a:hover{
-                        color: #fff;
-                        background-color: #ccc;
+                        background: #ccc;
+                        color: white;
                     }
                 }
             }
@@ -73,25 +76,57 @@ body {
     }
     .content{
         display: flex;
+        // esto es para separar dos cajas en dentro de un main o section en una misma línea//
         justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         .aside{
-            flex-basis: 15%;
+            flex-basis: 20%;
+            text-align: center;
 
+            padding: 15px;
+            h2{
+                font-size: 35px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 20px;
+            }
+            ul{
+                display: flex;
+                flex-flow: column wrap;
+                li{
+                    margin-bottom: 20px;
+                    a{
+                        width: 230px;
+                        display: block;
+                        padding: 15px;
+                        margin: 0px auto;
+                        color: #222;
+                        transition: all 300ms;
+                        -webkit-transition: all 300ms;
+                        -moz-transition: all 300ms;
+                        -ms-transition: all 300ms;
+                        -o-transition: all 300ms;
+                    }
+                    a:hover{
+                        background-color: #222;
+                        color: white;
+                    }
+                }
+            }
         }
         .proyects{
-            flex-basis: 75%;
             display: flex;
+            flex-basis: 75%;
             flex-flow: row wrap;
-            justify-content: space-between;
             padding-right: 10px;
+            
+            justify-content: space-between;
             .proyect{
                 flex-grow: 1;
-                width: 250px;
+                border: 1px solid #ccc;
                 margin-right: 20px;
-                margin-bottom: 25px;
-                border: 1px solid rgba(225, 225, 226, 0.8);
+                margin-bottom: 20px;
                 .image-wrap{
                     img{
                         width: 100%;
@@ -100,19 +135,17 @@ body {
                 .proyect-info{
                     padding: 10px;
                     a{
-                        font-size: 16px;
                         color: #222;
                         transition: all 300ms;
                         -webkit-transition: all 300ms;
                         -moz-transition: all 300ms;
                         -ms-transition: all 300ms;
                         -o-transition: all 300ms;
-}
+                    }
                     a:hover{
-                        color: rgb(53, 114, 53);
+                        color: rgb(42, 106, 42);
                     }
                     p{
-                        font-size: 16px;
                         color: gray;
                     }
                 }
@@ -120,13 +153,6 @@ body {
         }
     }
 }
-
-
-
-
-
-
-
 
 
 
@@ -161,6 +187,8 @@ body {
 //         height: 120px;
 //         align-items: center;
 //         border-bottom: 1px solid #ccc;
+//         /*flex-flow: row wrap*/
+//         flex-flow: row wrap;
 //         .logo{
 //             flex-grow: 1;
 
@@ -175,7 +203,8 @@ body {
 //             flex-basis: 40%;
 //             flex-grow: 1;
 //             height: 100%;
-//             padding: 30px;
+//             padding-right: 30px;
+
 //             ul{
 //                 display: flex;
 //                 height: 100%;
